@@ -1,14 +1,7 @@
-const Greeting = () => {
-    const greeting = 'Welcome to this page';
-    const date = new Date();
-    
+const Greeting = (props) => {
   return (
-    <div>
-        <h1>{greeting}</h1>
-        <p>Today's date is {date.getDate()}</p>
-
-    </div>
+    props.timeOfDay === 'morning' ?"Good Morning" : "Good Afternoon"
   )
 }
 
-export default Greeting;
+export default Greeting

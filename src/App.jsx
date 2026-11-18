@@ -1,8 +1,16 @@
-import Cart from "./components/Cart"
+import Greeting from "./components/Greeting"
+import UserStatus from "./components/UserStatus"
+import Weather from "./components/Weather"
 
 const App = () => {
   return (
-    <Cart/>
+    <div>
+      <UserStatus 
+        isLogin = {true}
+        isAdmin = {true}/>
+      <Weather/>
+      <Greeting timeOfDay = "morning"/>
+    </div>
   )
 }
 
