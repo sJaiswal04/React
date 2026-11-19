@@ -1,18 +1,18 @@
-const Copy = () => {
-  const copyHandler =()=> console.log("Stop stealing my work")
-  return (
-    <p onCopy={copyHandler}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas nam excepturi beatae ex sed sapiente atque, ducimus ad amet magni, veritatis libero incidunt odit deleniti? Expedita officiis illum nemo!</p>
-  )
-}
+import {useState} from 'react'
 
 const App = () => {
+  const [count,setCount] = useState(2);
+  const increment = ()=> setCount(count+1)
+
+  const decrement = ()=> setCount(count-1)
   return (
-    <div>
-      <Copy/>
-    </div>
+    <section>
+      {count}
+      <button onClick={increment}>+</button>
+
+      <button onClick={decrement}>-</button>
+    </section>
   )
 }
 
 export default App
-
-
