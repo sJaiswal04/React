@@ -1,28 +1,16 @@
 import {useState} from 'react'
 
+import ComponentOne from './components/ComponentOne';
+
+import ComponentTwo from './components/ComponentTwo';
+
+
 const App = () => {
-  const [movie,setMovie] = useState({
-    title:'Dhoom 3',
-    rating : 8
-  })
-
-  const handleRating = ()=>{
-    // const copyMovie = {
-    //   ...movie,
-    //   rating :5
-    // }
-    setMovie({...movie,rating:7.5});
-  }
-
-  
+  const [count,setCount] = useState(0);
   return (
     <section>
-      <h1>Movie : {movie.title}</h1>
-      
-
-      <p>Rating : {movie.rating}</p>
-
-      <button onClick={handleRating}>Change Rating</button>
+      <ComponentOne count = {count} onClickHandler = {() => setCount(count+1)}/>
+      <ComponentTwo count = {count} onClickHandler = {() => setCount(count+1)}/>
     </section>
   )
 }
