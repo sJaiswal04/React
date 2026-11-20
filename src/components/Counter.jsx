@@ -7,7 +7,8 @@ const Counter = () => {
     const increment = ()=>{setCou(cou+1);}
   return (
     <div>
-        <h1>You clicked {cou} times</h1>
+        <h1>Counter</h1>
+        <p>{cou}</p>
         <button onClick={increment}>increase</button>
     </div>
   )
