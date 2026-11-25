@@ -1,32 +1,14 @@
-// import { useRef } from "react"
-
-import FocusInput from "./components/FocusInput"
-import Timer from "./components/Timer"
-
-// const App = () => {
-//   const inputElement = useRef(null);
-  
-  
-//   const focusbro = () =>{
-//     inputElement.current.focus();
-//     inputElement.current.value = "focus on Study"
-//   }
-//   return (
-//     <div>
-//       <input type="text" ref={inputElement} />
-//       <button onClick={()=>focusbro()}>Focus Baby</button>
-//     </div>
-//   )
-// }
-
-// export default App
+import UniqueID from "./components/UniqueID"
 
 
 const App = () => {
   return (
     <div>
-      <FocusInput/>
-      <Timer/>
+      <UniqueID/>
+      
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, quisquam non aut hic delectus blanditiis rerum. Ipsum asperiores, inventore excepturi unde quia, blanditiis quod expedita, harum perferendis perspiciatis odio recusandae.</p>
+      
+      <UniqueID/>
     </div>
   )
 }
